@@ -1,0 +1,18 @@
+server :
+   port: 12347
+   servlet:
+      context-path: /micro-calculator-service
+      
+spring:
+  application:
+    name: micro-calculator-service
+      
+eureka:
+   client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+         #defaultZone: http://localhost:1234/eureka
+         defaultZone: http://localhost:1234/micro-eureka-service-discovery/eureka
+   instance:
+      hostname: localhost
