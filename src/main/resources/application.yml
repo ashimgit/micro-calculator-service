@@ -13,6 +13,7 @@ eureka:
       fetchRegistry: true
       serviceUrl:
          #defaultZone: http://localhost:1234/eureka
-         defaultZone: http://localhost:1234/micro-eureka-service-discovery/eureka
+         #defaultZone: http://localhost:1234/micro-eureka-service-discovery/eureka #non-docker
+         defaultZone: http://docker-eureka-calculator-discovery:1234/micro-eureka-service-discovery/eureka #for docker communication
    instance:
-      hostname: localhost
+      hostname: docker-micro-calculator-service #localhost-for non-docker
