@@ -6,5 +6,5 @@ Docker :
 
 	i. ==$docker build -f src/main/docker/Dockerfile -t docker-micro-calculator-service .
 	
-	ii. ==$docker run --network mynet --name docker-micro-calculator-service -p 12347:12347 docker-eureka-calculator-discovery
+	ii. ==$docker run --network mynet --name docker-micro-calculator-service -p 12347:12347 docker-micro-calculator-service
 	
